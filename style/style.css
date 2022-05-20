@@ -15,11 +15,15 @@
 
 
 :root{
+    --cora:#fff;
     --cor0:#2A8C82;
     --cor1:#41BFB3;
     --cor2:#9BF2EA;
     --cor3:#275950;
     --cor4:#260101;
+    --corV:#72A845;
+    --corv1:#4F722A;
+    --escuro:#333333;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destque:'Bebas Neue' serif;
@@ -34,7 +38,7 @@
 
 
 body{
-    background-color: var(--cor2);
+    background-color: var(--cora);
     font-family: var(--fonte-padrao);
     border-radius: 10px;
     
@@ -42,15 +46,16 @@ body{
 }
 
 header{
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
-    min-height: 150px;
+    background-image: url(../imagens/1.png);
+    background-position: center;
+    min-height: 290px;
     text-align: center;
     padding-top: 40px;
     
     
 }
 header > h1{
-    color: rgb(0, 0, 0);
+    color: var(--corV);
     font-family: 'Runa-fonte';
     font-size: 3em;
     text-align: center;
@@ -59,7 +64,7 @@ header > h1{
     
 }
 header > p{
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     text-align: center;
@@ -69,8 +74,8 @@ header > p{
     
 }
 nav{
-    background-color: var(--cor3);
-    padding: 10px;
+    background-color: var(--escuro);
+    padding: 14px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.308);
 
 }
@@ -78,12 +83,13 @@ nav > a{
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
-    color: var(--cor2);    
+    color: var(--cora);    
     font-weight: bold;
     transition-duration: .5s;
 }
 nav > a:hover{
-    background-color: var(--cor0);
+    background-color: var(--cora);
+    color: var(--escuro);
 }
 
 
@@ -136,7 +142,8 @@ div.videos > iframe{
 }
 
 main > article> h1{
-    background-color: #BCD5F4;
+    background-image: linear-gradient(to right, rgba(3, 101, 3, 0.855), transparent);
+    padding: 17px;
     color: #032821;
     text-align: center;
     font-weight: bold;
@@ -195,7 +202,7 @@ aside ul{
 }
 
 footer{
-    background-color: #103730;
+    background-color: var(--escuro);
     color: rgb(2, 2, 2);
     text-align: center;
     font-size: 0.8em;
@@ -205,4 +212,48 @@ footer img.pequena{
     padding: 5px;
     max-width: 20px;
     min-width: 10px;
+}
+
+
+/* Character Page */
+
+
+
+.txt h1 {
+    background-image: linear-gradient(to right, rgba(3, 101, 3, 0.855), transparent);
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.txt label {
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+}
+.botao{
+    padding: 10px;
+    background-color: var(--corv1);
+    color: var(--cora);
+    border-radius: 10px;
+    cursor: pointer;
+    border: var(--corV);
+}
+.botao:hover {
+    background-color: var(--corV);
+    color: #333333;
+}
+
+#show-info {
+   background-image: url(../imagens/wallpaper2.jpg);
+    border-radius: 20px;
+}
+
+#show-info p {
+    color: var(--cora);
+    
+}
+
+#show-info strong{
+    color: var(--corV);
 }
