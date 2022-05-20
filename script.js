@@ -28,8 +28,7 @@ btn.addEventListener('click', function () {
       '</p>'
     htmlString +=
       '<p> Account status: ' + ourData.characters.data.account_status + '</p>'
-    htmlString +=
-      '<p> <strong> Status: </strong> ' +
+     +
       ourData.characters.data.status +
       '</p>'
 
