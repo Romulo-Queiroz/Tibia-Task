@@ -211,7 +211,7 @@ footer{
     color: rgb(2, 2, 2);
     text-align: center;
     font-size: 0.8em;
-    padding: 5px;
+    padding: 10px;
 }
 footer img.pequena{
     padding: 5px;
@@ -322,12 +322,25 @@ footer img.pequena:hover {
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(21, 21, 21, 0.855), transparent)
 }
+.title-especial {
+    display: block;
+    text-align: center;
+}
+.txt-especial {
+    display: block;
+    text-align: center;
+}
 .aviso {
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
     font-weight: 800;
+}
+.footer-principal {
+    display: block;
+    text-align: center;
+    background-color: var(--escuro);
 }
 
 /* Responsividade */
