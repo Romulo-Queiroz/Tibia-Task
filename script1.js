@@ -7,7 +7,11 @@ function getmonster(name){
     monsterDetails.innerHTML = `
     <img src="${data.creature.image_url}"/>
     <h5>Nome: ${data.creature.name}</h5>
+    <p>Behaviour: ${data.creature.behaviour}</p>
+    <h5>Hitpoints: ${data.creature.hitpoints}</h5>
     <p>Description: ${data.creature.description}</p>
+    <h5>Weakness: ${data.creature.weakness}</h5>
+
     ` 
   })
 }

@@ -260,9 +260,13 @@ footer img.pequena{
 
 /* Monster page */
 
+
+
+
 main {
     display: flexbox;
     width: 100%;   
+    position: relative;
 }
 
 #monster-details { 
@@ -274,6 +278,12 @@ main {
     background-color: #83828232;
     border-radius: 20px;
     width: 150px;
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    
 }
 
 #monster-details p {
