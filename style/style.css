@@ -267,14 +267,6 @@ footer img.pequena:hover {
 /* Monster page */
 
 
-
-
-main {
-    display: flexbox;
-    width: 100%;   
-    position: relative;
-}
-
 #monster-details { 
     position: relative;
     align-items: center;
@@ -301,7 +293,5 @@ main {
 
 @media (max-width:375px) {
 
-    header {
-        background-position: top;
-    }
+    
 }
