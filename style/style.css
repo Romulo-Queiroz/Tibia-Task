@@ -47,8 +47,8 @@ body{
 
 header{
     background-image: url(../imagens/1.png);
-    background-position: center;
-    min-height: 290px;
+    background-position: top;
+    min-height: 330px;
     text-align: center;
     padding-top: 40px;
     
