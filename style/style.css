@@ -12,6 +12,10 @@
     src: url('../fontes/runa-fonte.ttf') format(Truetype);
 }
 
+@font-face {
+    font-family: 'Pixeled';
+    src: url('../fontes/Pixeled.ttf') format(Truetype);
+}
 
 
 :root{
@@ -118,7 +122,7 @@ main p{
 }
 
 main strong{
-    color: var(--cor3);
+    color: #000;
     padding: 2px 6px;
     font-weight: bold;
 }
@@ -287,6 +291,43 @@ footer img.pequena:hover {
 #monster-details p {
     align-items: center;
     font-weight: 400;
+}
+
+/* Home page */
+
+.table-full {
+    background-color: rgba(153, 153, 153, 0.24);
+}
+#bem-vindo {
+     background-image: linear-gradient(to right, rgba(21, 21, 21, 0.855), transparent);
+    color: #000;
+}
+
+.logo-avatar {
+    width: 300px;
+}
+.sobre-mim {
+    font-weight: 500;
+    padding: 20px;
+}
+.sobre-mim strong {
+    color: #000;
+}
+
+.tech-txt {
+    padding: 17px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(21, 21, 21, 0.855), transparent)
+}
+.aviso {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 800;
 }
 
 /* Responsividade */
