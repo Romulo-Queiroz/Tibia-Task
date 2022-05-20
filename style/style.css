@@ -257,3 +257,12 @@ footer img.pequena{
 #show-info strong{
     color: var(--corV);
 }
+
+/* Responsividade */
+
+@media (max-width:375px) {
+
+    header {
+        background-position: top;
+    }
+}
