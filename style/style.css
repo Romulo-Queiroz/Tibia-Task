@@ -75,7 +75,7 @@ header > p{
 }
 nav{
     background-color: var(--escuro);
-    padding: 14px;
+    padding: 17px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.308);
 
 }
@@ -256,6 +256,29 @@ footer img.pequena{
 
 #show-info strong{
     color: var(--corV);
+}
+
+/* Monster page */
+
+main {
+    display: flexbox;
+    width: 100%;   
+}
+
+#monster-details { 
+    position: relative;
+    align-items: center;
+}
+
+#monster-details img {
+    background-color: #83828232;
+    border-radius: 20px;
+    width: 150px;
+}
+
+#monster-details p {
+    align-items: center;
+    font-weight: 400;
 }
 
 /* Responsividade */
