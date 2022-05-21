@@ -57,7 +57,6 @@ header{
     text-align: center;
     padding-top: 40px;
     
-    
 }
 header > h1{
     color: var(--corV);
@@ -397,7 +396,7 @@ footer img.pequena:hover {
 
 #mobile {
     display: none;
-    align-items: center;
+    align-items: right;
 }
 #close {
     display: none;
@@ -408,6 +407,7 @@ footer img.pequena:hover {
 
 
 @media(max-width: 499px) {
+
     #navbar {
         display: flex;
         flex-direction: column;
@@ -418,7 +418,7 @@ footer img.pequena:hover {
         right: -300px;
         height: 100vh;
         width: 300px;
-        background-color: #e3e6f3;
+        background-color: var(--escuro);
         box-shadow:  0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
         transition: 0.3s;
@@ -429,11 +429,12 @@ footer img.pequena:hover {
     #mobile {
         display: flex;
         align-items: center;
+        padding-top: 17px;
     }
     #mobile i {
         color: #000;
         font-size: 24px;
-        padding-left: 20px;
+        padding-left: 90%;
     }
     #close {
         display: initial;
@@ -444,4 +445,38 @@ footer img.pequena:hover {
         font-size: 24px;
 
     }
+
+    /* imagem / txt */
+
+    .container {
+        position: relative;
+        flex-direction: column;
+        height: 900px;
+    }
+    .maior {
+        height: 1000px;
+    }
+    .container p {
+        line-height: 50px;
+    }
+    
+    .logo-avatar {
+        flex-direction: column;
+
+        display: inline-block;
+        width: 90%;
+        position: relative;
+    }
+
+    .sobre-mim {
+        height: 600px;
+        position: absolute;
+        line-height: 50px;
+    }
+    .aviso {
+        display: none;
+    }
+    
+
+    
 }
