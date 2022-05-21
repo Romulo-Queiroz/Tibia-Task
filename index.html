@@ -13,12 +13,16 @@
         <h1>Tibian's</h1>
         <p>Fã site dedicado aos assuntos Tibiano</p>
     </header>
-    <nav>
+    <nav id="navbar">
         <a href="inicio.html">Home</a>
-        <a href="index.html">Curiosidades</a>
+        <a class="active" href="index.html">Curiosidades</a>
         <a href="character.html">Character</a>
         <a href="monster.html">Monsters</a>
+        <a href="#" id="close"><i class="fa-solid fa-xmark"></i> </a>
     </nav>
+    <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
     <main>
         <article>
                 <h1 class="Txt-topo">Curiosidades Sobre Tibia</h1>
@@ -105,6 +109,8 @@
     </main>
     <footer>
         <p><strong>Site Desenvolvido por Rômulo Queiroz</strong> &copy; <a href="https://github.com/Romulo-Queiroz/html5-css3" target="_blank" rel="external"><img class="pequena" src="imagens/icone.png" alt="github"></a></p>
+        
     </footer>
+    <script src="menu-mobile.js"></script>
 </body>
 </html>
