@@ -477,16 +477,15 @@ footer img.pequena:hover {
         width: 100%;
         margin-left: 0;
     }
-    /* .sobre-mim {
-        width: 100%;
-        position: absolute;
-        margin-left: 0;
-        margin-top: 35px;
-    } */
+
     .aviso {
         display: none;
     }
     
-
+    /* monster page */
+    .text-center {
+        height: 200px;
+        padding-bottom: 10px;
+    }
     
 }
