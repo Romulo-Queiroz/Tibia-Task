@@ -316,9 +316,6 @@ footer img.pequena:hover {
 /* Home page */
 
 
-.table-full {
-    background-color: rgba(153, 153, 153, 0.24);
-}
 #bem-vindo {
      background-image: linear-gradient(to right, rgba(21, 21, 21, 0.855), transparent);
     color: #000;
@@ -331,15 +328,24 @@ footer img.pequena:hover {
     margin-right: auto;
     cursor: pointer;
 }
-
-
-
-.logo-avatar {
-    width: 300px;
+.container {
+    width: 100%;
+    position: relative;
 }
+.maior {
+    height: 100%;
+}
+.logo-avatar {
+    display: flex;
+    width: 300px;
+    height: auto;
+}
+
 .sobre-mim {
+    text-align: start;
     font-weight: 500;
-    padding: 20px;
+    margin-left: 34%;
+
 }
 .sobre-mim strong {
     color: #000;
@@ -451,28 +457,30 @@ footer img.pequena:hover {
     .container {
         position: relative;
         flex-direction: column;
-        height: 900px;
+        height: 760px;
     }
     .maior {
-        height: 1000px;
+        height: 900px;
     }
     .container p {
-        line-height: 50px;
+        width: 70%;
+        line-height: 37px;
     }
     
     .logo-avatar {
-        flex-direction: column;
-
-        display: inline-block;
         width: 90%;
         position: relative;
     }
-
-    .sobre-mim {
-        height: 600px;
-        position: absolute;
-        line-height: 50px;
+    #paragrafo {
+        width: 100%;
+        margin-left: 0;
     }
+    /* .sobre-mim {
+        width: 100%;
+        position: absolute;
+        margin-left: 0;
+        margin-top: 35px;
+    } */
     .aviso {
         display: none;
     }
