@@ -290,7 +290,9 @@ footer img.pequena:hover {
 
 /* Monster page */
 
-
+.text-center {
+    height: 180px;
+}
 #monster-details { 
     position: relative;
     align-items: center;
