@@ -98,6 +98,9 @@ nav > a:hover{
     color: var(--escuro);
 }
 
+/* Paragrafos especial */
+
+
 
 main{
     background-color: linen;
@@ -462,7 +465,7 @@ footer img.pequena:hover {
         height: 760px;
     }
     .maior {
-        height: 900px;
+        height: 1300px;
     }
     .container p {
         width: 70%;
