@@ -1,19 +1,27 @@
 
  let arquivedetails = document.getElementById('arquive-details')
- 
+ window.addEventListener('DOMContentLoaded',() => getnews())
 
 function getnews(){ 
-    fetch('https://api.tibiadata.com/v3/newsarchive')
+    fetch('https://api.tibiadata.com/v3/news/archive/4')
 .then(response => response.json())
 .then(data => {
-    recentNews.innerHTML= `
+    const news = data.news;
+    news.forEach(element => {
+        arquivedetails.innerHTML += `
+        
+         <p>Date: ${element.date} </p>
+         <p>News: ${element.news} </p>
+         <a href=${element.url}>Cotinue lendo</a>
+        
+        `
+    });
+
     
-    <p>Date: ${data.newsarchive.date} </p>
-    <p>Date: ${data.newsarchive.news} </p>
     
-    `
-    
-    
+
 })
 
 }
+
+
