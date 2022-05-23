@@ -502,6 +502,10 @@ footer img.pequena:hover {
 
 
 @media(max-width: 499px) {
+     /* Inicio */
+
+  
+ 
 
     #navbar {
         display: flex;
@@ -524,12 +528,13 @@ footer img.pequena:hover {
     #mobile {
         display: flex;
         align-items: center;
-        padding-top: 17px;
+        padding-top: 10px;
     }
     #mobile i {
         color: #000;
         font-size: 24px;
         padding-left: 90%;
+        margin: 5px;
     }
     #close {
         display: initial;
@@ -546,7 +551,7 @@ footer img.pequena:hover {
     .container {
         position: relative;
         flex-direction: column;
-        height: 760px;
+        height: 800px;
     }
     .maior {
         height: 1300px;
@@ -575,4 +580,11 @@ footer img.pequena:hover {
         padding-bottom: 10px;
     }
     
+    /* Noticias */
+
+    #arquive-details img {
+        display: none;
+    }
+
+
 }
