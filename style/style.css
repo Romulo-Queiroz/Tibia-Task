@@ -475,10 +475,17 @@ footer img.pequena:hover {
 
 #players-online {   
     display: inline-block;
+  
+    padding: 15px;
 }
 #players-online p {
     display: inline-block;
     color: var(--corV);
+}
+#players-online label {
+    display: inline-block;
+    color: #fff;
+    font-weight: 550;
 }
 
 
