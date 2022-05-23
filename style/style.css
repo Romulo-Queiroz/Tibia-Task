@@ -405,6 +405,10 @@ footer img.pequena:hover {
 
 /* Noticias Page */
 
+#noticias {
+    background-color: #fbe8c6;
+}
+
 #arquive-details {
 
     position: relative;
@@ -416,18 +420,30 @@ footer img.pequena:hover {
 #arquive-details img {
     position: absolute;
     opacity: 0.5;
-   z-index: -1;
-    height: 1010px;
+    z-index: -1;
+    height: 1250px;
+    width: 100%;
+}
+#arquive-details h2 {
+    background-image: url(../imagens/txt-background.gif);
+    color: #fff;
+    padding: 8px;
+    width: 100%;
+}
+#arquive-details p {
+    font-weight: 800;
+    color: #000;
+    padding: 8px;
 }
 
     
 .news h1 {
+    color: #FDEED5;
     text-align: center;
-    padding: 20px;
+    padding: 13px;
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right, rgba(21, 21, 21, 0.855), transparent)
+    margin-right: auto;background-image: url(../imagens/title-background-green.gif);
     
 }
 .news h2 {
@@ -438,11 +454,12 @@ footer img.pequena:hover {
 }
 
 #arquive-details div{
-    background-color: var(--corv1);
+   background-image: url(../imagens/title-background-green.gif);
     color: #fff;
-    border-radius: 30px;
+    border-radius: 4px;
     margin: 20px;
     width: 120px;  
+    padding: 7px;
 }
 #arquive-details div:hover{
     opacity: 0.6;
