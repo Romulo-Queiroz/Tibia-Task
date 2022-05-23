@@ -3,7 +3,7 @@
  window.addEventListener('DOMContentLoaded',() => getnews())
 
 function getnews(){ 
-    fetch('https://api.tibiadata.com/v3/news/archive/6')
+    fetch('https://api.tibiadata.com/v3/news/archive/2')
 .then(response => response.json())
 .then(data => {
     const news = data.news;

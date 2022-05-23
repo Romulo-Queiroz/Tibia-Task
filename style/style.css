@@ -406,12 +406,21 @@ footer img.pequena:hover {
 /* Noticias Page */
 
 #arquive-details {
-    background-color: rgba(184, 184, 184, 0.274);
+
     position: relative;
-    height: 1250px;
+    
     padding: 15px;
     border-radius: 20px;
+    z-index: 1;
 }
+#arquive-details img {
+    position: absolute;
+    opacity: 0.5;
+   z-index: -1;
+    height: 1010px;
+}
+
+    
 .news h1 {
     text-align: center;
     padding: 20px;
@@ -419,6 +428,7 @@ footer img.pequena:hover {
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(21, 21, 21, 0.855), transparent)
+    
 }
 .news h2 {
     padding: 30px;
@@ -426,10 +436,7 @@ footer img.pequena:hover {
 .news p {
     font-weight: 700;
 }
-#arquive-details {
-    margin: 20px;
-    padding-bottom: 20px;
-}
+
 #arquive-details div{
     background-color: var(--corv1);
     color: #fff;
