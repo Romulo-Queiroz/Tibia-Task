@@ -10,9 +10,11 @@ function getnews(){
     news.forEach(element => {
         arquivedetails.innerHTML += `
         
-         <p>Date: ${element.date} </p>
+         <h2>Date: ${element.date} </h2>
          <p>News: ${element.news} </p>
-         <a href=${element.url}>Cotinue lendo</a>
+         
+         <div><a target="_blank" href=${element.url}>Cotinue lendo</a></div> 
+
         
         `
     });

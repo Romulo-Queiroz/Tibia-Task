@@ -403,6 +403,51 @@ footer img.pequena:hover {
     background-color: var(--escuro);
 }
 
+/* Noticias Page */
+
+#arquive-details {
+    background-color: rgba(184, 184, 184, 0.274);
+    position: relative;
+    height: 900px;
+    padding: 15px;
+    border-radius: 20px;
+}
+.news h1 {
+    text-align: center;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(21, 21, 21, 0.855), transparent)
+}
+.news h2 {
+    padding: 30px;
+}
+.news p {
+    font-weight: 700;
+}
+#arquive-details {
+    margin: 20px;
+    padding-bottom: 20px;
+}
+#arquive-details div{
+    background-color: var(--corv1);
+    color: #fff;
+    border-radius: 30px;
+    margin: 20px;
+    width: 120px;  
+}
+#arquive-details div:hover{
+    opacity: 0.6;
+}
+#arquive-details a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
 /* Mobile */
 
 #mobile {
