@@ -250,8 +250,6 @@ footer img.pequena:hover {
 
 /* Character Page */
 
-
-
 .txt h1 {
     color: #fff;
     background-image: url(../imagens/title-background-green.gif);
@@ -473,7 +471,15 @@ footer img.pequena:hover {
     color: #000;
 }
 
+/* Players Online */
 
+#players-online {   
+    display: inline-block;
+}
+#players-online p {
+    display: inline-block;
+    color: var(--corV);
+}
 
 
 /* Mobile */
