@@ -150,9 +150,9 @@ div.videos > iframe{
 }
 
 main > article> h1{
-    background-image: linear-gradient(to right, rgba(3, 101, 3, 0.855), transparent);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.855), transparent);
     padding: 17px;
-    color: #032821;
+    color: #000000;
     text-align: center;
     font-weight: bold;
 }
@@ -162,14 +162,14 @@ main > article> h1{
     padding: 17px;
 }
 main>article>h3{
-    background-image: linear-gradient(to right, rgba(3, 101, 3, 0.855), transparent);
+    background-image: linear-gradient(to right, rgba(8, 8, 8, 0.855), transparent);
     font-size: 1.3em;
     padding:5px 6px ;
-    color: #032821;
+    color: #ffffff;
 
 }
 main aside h3{
-    background-image: linear-gradient(to right, rgba(7, 36, 59, 0.855), transparent);
+    background-image: linear-gradient(to right, rgba(5, 40, 68, 0.855), transparent);
     font-size: 1.3em;
     font-weight: bold;
     padding:5px 6px ;
@@ -184,15 +184,15 @@ main a{
 }
 main a:hover{
     text-decoration: underline;
-    color: #5781f4;
+    color: #fbfcff;
 }
 main h2{
     font-family: var(--fonte-destque);
-    color: #032821;
+    color: #fff9f9;
     font-size: 1.3em;
     font-weight: bold;
     padding: 5px 6px;
-    background-image: linear-gradient(to right, rgba(3, 101, 3, 0.855), transparent);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.855), transparent);
 }
 .container {
     width: 100%;
@@ -210,10 +210,10 @@ main h2{
     gap: 10px;
 }
 #titulo-video{
-    background-image: linear-gradient(to right, rgba(3, 101, 3, 0.855), transparent);
+    background-image: linear-gradient(to right, rgba(8, 8, 8, 0.855), transparent);
     font-size: 1.3em;
     padding:5px 6px ;
-    color: #032821;
+    color: #ffffff;
     
 }
 
@@ -253,10 +253,12 @@ footer img.pequena:hover {
 
 
 .txt h1 {
-    background-image: linear-gradient(to right, rgba(3, 101, 3, 0.855), transparent);
+    color: #fff;
+    background-image: url(../imagens/title-background-green.gif);
     padding: 10px;
     text-align: center;
     position: relative;
+    font-size: 28px;
 }
 
 .txt label {
