@@ -410,9 +410,7 @@ footer img.pequena:hover {
 }
 
 #arquive-details {
-
     position: relative;
-    
     padding: 15px;
     border-radius: 20px;
     z-index: 1;
@@ -421,7 +419,7 @@ footer img.pequena:hover {
     position: absolute;
     opacity: 0.5;
     z-index: -1;
-    height: 1190px;
+    height: 1350px;
     width: 100%;
 }
 #arquive-details h2 {
@@ -468,7 +466,7 @@ footer img.pequena:hover {
 }
 #arquive-details a {
     text-decoration: none;
-    color: #000;
+    color: rgb(255, 253, 253);
 }
 
 /* Players Online */

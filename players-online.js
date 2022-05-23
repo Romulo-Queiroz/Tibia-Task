@@ -1,3 +1,4 @@
+// Players online function
 
 let playersdetails = document.getElementById('players-online')
 window.addEventListener('DOMContentLoaded', () => getonline())
@@ -15,3 +16,6 @@ function getonline() {
             `
         })
 }
+
+// Details Worlds
+
