@@ -14,6 +14,6 @@ async function getmonsters() {
     draptorchance.innerText = `${Midnight.current_prob *100}%`
 
     const draptor_last_view = document.getElementById('Draptor-Last-view')
-    draptor_last_view.innerText = moment(Midnight.last_view,'YYYY-MM-DD').fromNow()
-
+    draptor_last_view.innerText = moment(Midnight.last_view,'YYYY-MM-DD').from(moment().startOf('day'))
+   
 }
