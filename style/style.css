@@ -488,6 +488,18 @@ footer img.pequena:hover {
     font-weight: 550;
 }
 
+/* Previsões Pagina */
+
+#previsao {
+    padding: 15px;
+}
+
+#previsao td {
+    padding: 8px;
+}
+#previsao img {
+   
+}
 
 
 
