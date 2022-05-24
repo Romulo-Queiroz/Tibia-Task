@@ -12,7 +12,8 @@ function getonline() {
             const totalPlayersOn = data?.worlds.players_online
             document.getElementById('players-online').innerHTML = `  
            <label>Players Online:</label>
-            <p> ${totalPlayersOn} </p>          
+            <p> ${totalPlayersOn} </p>   
+                   
             `
         })
 }

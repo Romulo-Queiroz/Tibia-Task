@@ -97,7 +97,10 @@ nav > a:hover{
     background-color: var(--cora);
     color: var(--escuro);
 }
-
+nav > img {
+    width: 60px;
+    height: 45px;
+}
 /* Paragrafos especial */
 
 
@@ -472,8 +475,7 @@ footer img.pequena:hover {
 /* Players Online */
 
 #players-online {   
-    display: inline-block;
-  
+    display: inline-block;  
     padding: 15px;
 }
 #players-online p {
@@ -485,6 +487,8 @@ footer img.pequena:hover {
     color: #fff;
     font-weight: 550;
 }
+
+
 
 
 /* Mobile */
