@@ -511,6 +511,9 @@ footer img.pequena:hover {
 #details-table {
     background-color: rgba(152, 150, 150, 0.36);
 }
+.status-monsters {
+    border-radius: 10px;
+}
 
 
 /* Mobile */
