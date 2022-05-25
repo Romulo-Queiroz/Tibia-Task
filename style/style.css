@@ -446,7 +446,8 @@ footer img.pequena:hover {
     padding: 13px;
     display: block;
     margin-left: auto;
-    margin-right: auto;background-image: url(../imagens/title-background-green.gif);
+    margin-right: auto;
+    background-image: url(../imagens/title-background-green.gif);
     
 }
 .news h2 {
@@ -490,17 +491,26 @@ footer img.pequena:hover {
 
 /* Previsões Pagina */
 
+.table {
+    margin: auto;
+}
+
 #previsao {
-    padding: 15px;
+    margin-top: 15px;
 }
 
 #previsao td {
     padding: 8px;
 }
-#previsao img {
-   
+#tittle-table {
+    background-color: rgba(115, 115, 115, 0.507);
 }
-
+#tittle-table td {
+    font-weight: 600;
+}
+#details-table {
+    background-color: rgba(152, 150, 150, 0.36);
+}
 
 
 /* Mobile */
