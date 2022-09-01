@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style/style.css">
     <!-- ICONES -->
     <script src="https://kit.fontawesome.com/b20e204bb5.js" crossorigin="anonymous"></script>
+    <!-- Details-Players -->
+    <script src="script.js"></script>
 </head>
 <body>
     <div id="mobile">
@@ -34,22 +36,26 @@
         <i id="bar" class="fas fa-outdent"></i>
     </div>
     <main>
-        
-       <div class="txt">
+        <form class="container text-center txt" id="form"></form>
+     
          <h1>Coloque o nome do seu personagem</h1>
          <label>Character Name: 
         <input type="text" id="txtChar"></label>
-         <button id="btn" type="button" class="botao">Search</button>
+         <button id="btn" type="submit" class="botao">Search</button>
    
-         <div id="show-info"></div>
-       </div>
+         <div id="show-info"> </div>
+        </form>
+
+        <div class="players-details"></div>
+     
+      
    
     </main>
     <footer>
         <p><strong>Site Desenvolvido por Rômulo Queiroz</strong> &copy; <a href="https://github.com/Romulo-Queiroz/" target="_blank" rel="external"><img class="pequena" src="imagens/icone.png" alt="github"></a></p>
     </footer>
 
-    <script src="script.js"></script>
+    
     <script src="menu-mobile.js"></script>
     <!-- Players online -->
     <script src="players-online.js"></script>

@@ -1,55 +1,23 @@
-let charName = document.getElementById('txtChar')
-let charContainer = document.getElementById('show-info')
-let btn = document.getElementById('btn')
+let showinfo = document.getElementById('players-details')
 
-// when press the button: //
-btn.addEventListener('click', function () {
-  document.getElementById('show-info').innerHTML = ''
+function getplayer(name){
+  fetch(`https://api.tibiadata.com/v3/character/${name}`)
+  .then(response=> response.json())
+  .then(data => {
+    showinfo.innerHTML `
+    <h5>Nome: ${data.characters.character.name}</h5>
+    `
+ })
+}
 
-  let ourRequest = new XMLHttpRequest()
+let form = document.getElementById('form')
 
-  ourRequest.open(
-    'GET',
-    'https://api.tibiadata.com/v2/characters/' + charName.value + '.json'
-  )
+let playername = document.getElementById('txtChar')
 
-  ourRequest.onload = function () {
-    let ourData = JSON.parse(ourRequest.responseText)
+form.addEventListener('submit', (e)=> {
+  e.preventDefault()
+  let playersnome = playername.value.getplayer(playersnome)
 
-    let htmlString = ''
-    htmlString += '<p> Name: ' + ourData.characters.data.name + '</p>'
-    htmlString += '<p> Vocation: ' + ourData.characters.data.vocation + '</p>'
-    htmlString += '<p> Level: ' + ourData.characters.data.level + '</p>'
-    htmlString += '<p> World: ' + ourData.characters.data.world + '</p>'
-    htmlString += '<p> Residence: ' + ourData.characters.data.residence + '</p>'
-    htmlString +=
-      '<p> Achievement Points: ' +
-      ourData.characters.data.achievement_points +
-      '</p>'
-    htmlString +=
-      '<p> Account status: ' + ourData.characters.data.account_status + '</p>'
-     +
-      ourData.characters.data.status +
-      '</p>'
-
-    let otherChars = ourData.characters.other_characters
-
-    for (i = 0; i < otherChars.length; i++) {
-      htmlString +=
-        '<p> Nome: ' +
-        otherChars[i].name +
-        ' - <strong> Status: </strong>' +
-        otherChars[i].status +
-        '</p>'
-    }
-
-    charContainer.insertAdjacentHTML('beforeend', htmlString)
-
-    console.log(otherChars[0].name)
-  }
-
-  ourRequest.send()
 })
 
-
-
+// Tentativa de update || Código antigo não funciona||
