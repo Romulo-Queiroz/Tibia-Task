@@ -7,17 +7,27 @@ function getplayer(name){
     showinfo.innerHTML `
     <h5>Nome: ${data.characters.character.name}</h5>
     `
+    let dados = data['characters'] +['character']
+    
+   
  })
+
 }
 
-let form = document.getElementById('form')
+ let form = document.getElementById('form')
 
-let playername = document.getElementById('txtChar')
+ let playername = document.getElementById('txtChar')
 
-form.addEventListener('submit', (e)=> {
-  e.preventDefault()
-  let playersnome = playername.value.getplayer(playersnome)
+
+
+
+ form.addEventListener('submit', (e)=> {
+   e.preventDefault()
+  //  let nomeMonster = charName.value 
+   getmonster(nomeMonster)
 
 })
+// console.log(nomeplayer)
+
 
 // Tentativa de update || Código antigo não funciona||
