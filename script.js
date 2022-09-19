@@ -1,33 +1,26 @@
-let showinfo = document.getElementById('players-details')
+window.addEventListener('DOMContentLoaded', (name) => {
+
+let monsterDetails = document.getElementById('players-details')
 
 function getplayer(name){
   fetch(`https://api.tibiadata.com/v3/character/${name}`)
-  .then(response=> response.json())
+  .then(response => response.json())
   .then(data => {
-    showinfo.innerHTML `
-    <h5>Nome: ${data.characters.character.name}</h5>
-    `
-    let dados = data['characters'] +['character']
-    
-   
- })
-
+    playersDetails.innerHTML = `
+    <p>Name: ${data.characters.character.name}</p>
+    ` 
+  })
 }
 
- let form = document.getElementById('form')
+let form = document.getElementById('form')
 
- let playername = document.getElementById('txtChar')
+let nome = document.getElementById('txtChar')
 
-
-
-
- form.addEventListener('submit', (e)=> {
-   e.preventDefault()
-  //  let nomeMonster = charName.value 
-   getmonster(nomeMonster)
+form.addEventListener('submit', (e)=> {
+  e.preventDefault()
+  let nomePlayer = nome.value 
+  getmonster(nome)
 
 })
-// console.log(nomeplayer)
-
-
-// Tentativa de update || Código antigo não funciona||
+  
+});
