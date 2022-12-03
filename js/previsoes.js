@@ -1,11 +1,4 @@
-// Primeiro demonstrar na td com id "Draptor-chance" a probabilidade de aparição.
-
-// Segundo criar uma função para alterar background da imagem -> sendo -> verde com chance vermelho sem.
-// requisição aqui : https://api.simacheck.com/server/lore/Ombra
-
-window.addEventListener('DOMContentLoaded',() => getmonsters())
-
-async function getmonsters() {
+async function getMonsters() {
     const {data} = await axios.get('https://api.simacheck.com/server/lore/Ombra')
     const loyal_panters = data['Loyal Partners']
     const Midnight = loyal_panters[2]
@@ -24,11 +17,5 @@ async function getmonsters() {
     else{
         document.querySelector('.status-monsters').style.backgroundColor = 'green'; 
     }
-   
-
-
 }
-
-//   Status 
-
-
+getMonsters();

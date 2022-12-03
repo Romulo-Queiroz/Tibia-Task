@@ -2,6 +2,19 @@ window.addEventListener('DOMContentLoaded', (name) => {
 
 let playersInfo = document.getElementById('show-info');
 
+function innerOtherCharacters(characters){
+  let list = ``;
+  characters.forEach(character => {
+    list += `<li>${character.name}</li>`
+  });
+  
+  return `
+   <ul>
+     ${list}
+   </ul>
+ `;
+}
+
 function getplayer(name){
   fetch(`https://api.tibiadata.com/v3/character/${name}`)
   .then(response => response.json())
@@ -15,10 +28,9 @@ function getplayer(name){
     <p>World: ${data.characters.character.world}</p>
     <p>Residence: ${data.characters.character.residence}</p>
     <p>Account Status: ${data.characters.character.account_status}</p>
-    
-
+    <p>Other characters:</p>${innerOtherCharacters(data.characters.other_characters)}
     ` 
-  })
+  }) 
 }
 
 let form = document.getElementById('form')
@@ -29,6 +41,13 @@ form.addEventListener('submit', (e)=> {
   e.preventDefault()
   let nomePlayer = nome.value 
   getplayer(nomePlayer)
-
+  
 })
 });
+
+// deleted : false
+// main : false
+// name : "string"
+// status : "string"
+// traded : false
+// world : "string"
