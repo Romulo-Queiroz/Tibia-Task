@@ -483,8 +483,7 @@ footer img.pequena:hover {
     display: inline-block;
     color: var(--corV);
 }
-#players-online label {
-    display: inline-block;
+#players-online span {
     color: #fff;
     font-weight: 550;
 }
@@ -537,6 +536,7 @@ footer img.pequena:hover {
  
 
     #navbar {
+        z-index: 1;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
