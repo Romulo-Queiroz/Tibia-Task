@@ -9,8 +9,8 @@ function innerOtherCharacters(characters){
   });
   
   return `
-   <ul>
-     ${list}
+   <ul class='othersCharacetrs'>
+     ${list}.
    </ul>
  `;
 }
