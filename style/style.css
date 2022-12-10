@@ -294,6 +294,15 @@ footer img.pequena:hover {
     color: var(--corV);
 }
 
+.othersCharacetrs {
+    color: var(--cora);
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
 /* Monster page */
 
 .text-center {
