@@ -61,6 +61,11 @@ async function innerBoss() {
   vampireLords.forEach((vampireBoss) => {
     tableContent += drawBossIten(vampireBoss);
   });
+  tableContent += 'Rookgaard';
+  const bossRookgaard = await getBoss('Rookgaard');
+  bossRookgaard.forEach((rookgaardBoss) => {
+    tableContent += drawBossIten(rookgaardBoss);
+  });
 
   tBody.innerHTML = tableContent;
 }
