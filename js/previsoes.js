@@ -30,13 +30,31 @@ function drawBossIten({ current_prob, image_url, boss, last_view }) {
     </tr>`;
 }
 
+function loader() {
+  const tBody = document.querySelector('#tBody');
+  const p = document.createElement('p');
+  p.innerText = '';
+  p.className = 'loader';
+  tBody.appendChild(p);
+  return p;
+}
+
 async function innerBoss() {
   const tBody = document.querySelector('#tBody');
+  loader();
   let tableContent = '';
-  const bosss = await getBoss('Loyal Partners');
-  bosss.forEach((boss) => {
-    tableContent += drawBossIten(boss);
+  tableContent += 'Loyal Partners';
+  const loyalPartners = await getBoss('Loyal Partners');
+  loyalPartners.forEach((loyalBoss) => {
+    tableContent += drawBossIten(loyalBoss);
   });
+
+  tableContent += 'Vampire Lords';
+  const vampireLords = await getBoss('Vampire Lords');
+  vampireLords.forEach((vampireBoss) => {
+    tableContent += drawBossIten(vampireBoss);
+  });
+
   tBody.innerHTML = tableContent;
 }
 
