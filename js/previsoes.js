@@ -2,8 +2,14 @@ let world = 'Antica';
 
 let input = document.querySelector('#input');
 let button = document.getElementById('btn');
-button.addEventListener('click', () => {
+button.addEventListener('click', (e) => {
+  e.preventDefault();
+  if (input.value === '') {
+    alert('Digite um mundo');
+    return;
+  }
   world = input.value;
+
   innerBoss();
 });
 
@@ -40,8 +46,9 @@ function loader() {
 }
 
 async function innerBoss() {
-  const tBody = document.querySelector('#tBody');
   loader();
+  const tBody = document.querySelector('#tBody');
+
   let tableContent = '';
   tableContent += 'Loyal Partners';
   const loyalPartners = await getBoss('Loyal Partners');
