@@ -39,6 +39,9 @@
   height: 120px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
+
+  margin: 0 auto;
+  text-align: center;
 }
 
 @-webkit-keyframes spin {
