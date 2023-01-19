@@ -334,6 +334,10 @@ li {
   list-style-type: none;
 }
 
+.txt-details {
+  font-weight: bold;
+}
+
 /* Monster page */
 
 .text-center {
