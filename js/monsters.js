@@ -1,10 +1,10 @@
-let monsterDetails = document.getElementById('monster-details')
+let monsterDetails = document.getElementById('monster-details');
 
-function getmonster(name){
+function getmonster(name) {
   fetch(`https://api.tibiadata.com/v3/creature/${name}`)
-  .then(response => response.json())
-  .then(data => {
-    monsterDetails.innerHTML = `
+    .then((response) => response.json())
+    .then((data) => {
+      monsterDetails.innerHTML = `
     <img src="${data.creature.image_url}"/>
     <h5>Nome: ${data.creature.name}</h5>
     <p>Behaviour: ${data.creature.behaviour}</p>
@@ -12,18 +12,16 @@ function getmonster(name){
     <p>Description: ${data.creature.description}</p>
     <h5>Weakness: ${data.creature.weakness}</h5>
 
-    ` 
-  })
+    `;
+    });
 }
 
-let form = document.getElementById('form')
+let form = document.getElementById('form');
 
-let charName = document.getElementById('txtChar')
+let charName = document.getElementById('txtChar');
 
-form.addEventListener('submit', (e)=> {
-  e.preventDefault()
-  let nomeMonster = charName.value 
-  getmonster(nomeMonster)
-
-})
-
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  let nomeMonster = charName.value;
+  getmonster(nomeMonster);
+});
