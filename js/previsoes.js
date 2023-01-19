@@ -4,13 +4,17 @@ let input = document.querySelector('#input');
 let button = document.getElementById('btn');
 button.addEventListener('click', (e) => {
   e.preventDefault();
-  if (input.value === '') {
-    alert('Digite um mundo');
-    return;
-  }
   world = input.value;
-
+  loader();
   innerBoss();
+  let tBody = document.querySelector('#tBody');
+  tBody.style.display = 'none';
+
+  setTimeout(() => {
+    tBody.style.display = 'table-row-group';
+    let loader = document.querySelector('.loader');
+    loader.remove();
+  }, 4000);
 });
 
 async function getBoss(type) {
@@ -37,18 +41,23 @@ function drawBossIten({ current_prob, image_url, boss, last_view }) {
 }
 
 function loader() {
-  const tBody = document.querySelector('#tBody');
+  const previsao = document.querySelector('#previsao');
   const p = document.createElement('p');
   p.innerText = '';
   p.className = 'loader';
-  tBody.appendChild(p);
+  previsao.appendChild(p);
   return p;
+}
+
+function removeloader() {
+  const loader = document.querySelector('.loader');
+  loader.remove();
 }
 
 async function innerBoss() {
   loader();
-  const tBody = document.querySelector('#tBody');
 
+  const tBody = document.querySelector('#tBody');
   let tableContent = '';
   tableContent += 'Loyal Partners';
   const loyalPartners = await getBoss('Loyal Partners');
@@ -68,6 +77,7 @@ async function innerBoss() {
   });
 
   tBody.innerHTML = tableContent;
+  removeloader();
 }
 
 innerBoss();
