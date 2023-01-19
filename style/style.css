@@ -111,6 +111,7 @@ nav > a {
 nav > a:hover {
   background-color: var(--cora);
   color: var(--escuro);
+  transition: 4s;
 }
 nav > img {
   width: 60px;
