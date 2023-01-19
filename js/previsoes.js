@@ -1,5 +1,12 @@
 let world = 'Antica';
 
+function padrao() {
+  setTimeout(() => {
+    loader();
+    innerBoss();
+  }, 1000);
+}
+
 let input = document.querySelector('#input');
 let button = document.getElementById('btn');
 button.addEventListener('click', (e) => {
@@ -55,8 +62,6 @@ function removeloader() {
 }
 
 async function innerBoss() {
-  loader();
-
   const tBody = document.querySelector('#tBody');
   let tableContent = '';
   tableContent += 'Loyal Partners';
@@ -80,4 +85,4 @@ async function innerBoss() {
   removeloader();
 }
 
-innerBoss();
+padrao();
