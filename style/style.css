@@ -569,7 +569,8 @@ li {
   padding: 10px;
   display: flexbox;
 }
-.sectionPesquisar input {
+.sectionPesquisar input,
+.input {
   width: 300px;
   height: 30px;
   border-radius: 10px;
