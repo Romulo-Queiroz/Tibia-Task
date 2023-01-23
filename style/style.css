@@ -99,6 +99,8 @@ header > p {
 }
 
 #navbar {
+  text-align: center;
+
   background-color: var(--escuro);
   padding: 18px;
   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.308);
@@ -332,9 +334,16 @@ footer img.pequena:hover {
   font-size: 1em;
   line-height: 2em;
 }
+.tittleOthers {
+  color: var(--cora);
+  font-size: 1.5em;
+  font-weight: bold;
 
+  margin: 15px 0px 15px 0px;
+}
 li {
-  list-style-type: none;
+  font-weight: bold;
+  list-style-type: square;
 }
 
 .txt-details {

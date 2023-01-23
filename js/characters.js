@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', (name) => {
     <p>World: ${data.characters.character.world}</p>
     <p>Residence: ${data.characters.character.residence}</p>
     <p>Account Status: ${data.characters.character.account_status}</p>
-    <p>Other characters:</p>${innerOtherCharacters(
+    <p class= "tittleOthers">Other characters:</p>${innerOtherCharacters(
       data.characters.other_characters
     )}
     `;
