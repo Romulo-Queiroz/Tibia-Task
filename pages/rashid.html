@@ -4,25 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../imagens/Chrisl21-Minecraft-Chest.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Details-Players -->
+    <script defer src="../js/players-online.js"></script>
+    <link rel="stylesheet" href="../style/style.css" />
     <title>Tibia - Rashid</title>
   </head>
   <body>
-    <!-- BLOCO DO CÓDIGO DO SCRIPT RASHID.JS -->
-    <section>
-      <div class="boxRashid">
-        <div id="rashid-img">
-          <img class="fundoIMG" src="../img/fundo.jpg" />
+    <div id="mobile">
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+    <header>
+      <h1>Tibian's</h1>
+      <p>Previsão atualizada</p>
+    </header>
+    <nav id="navbar">
+      <a href="../index.html">Curiosidades</a>
+      <a href="./character.html">Character</a>
+      <a href="./monster.html">Monsters</a>
+      <a href="./noticias.html">Notícias</a>
+      <a class="active" href="./previsoes.html">Previsões</a>
+      <a href="./sobre.html">Sobre</a>
+      <img src="../imagens/retro-citizen.gif" alt="imagem-citizen-outfit" />
+      <div id="players-online"></div>
+      <a href="#" id="close"><i class="fa-solid fa-xmark"></i> </a>
+    </nav>
+    <main class="vh">
+      <section>
+        <div class="boxRashid">
+          <div id="rashid-img">
+            <img class="fundoIMG" src="../img/fundo.jpg" />
+          </div>
+          <img class="rashidIMG" src="../img/Rashid.gif" />
+          <div class="txtRashid">
+            <div class="rashidTEXT">
+              <p>Cidade:</p>
+            </div>
+            <div class="rashidLOCAL">
+              <p id="rashid-day"></p>
+            </div>
+          </div>
         </div>
-        <img class="rashidIMG" src="../img/Rashid.gif" />
-        <div class="rashidTEXT">
-          <p>Rashid</p>
-        </div>
-        <div class="rashidLOCAL">
-          <p id="rashid-day"></p>
-        </div>
-      </div>
-    </section>
-
+      </section>
+    </main>
+    <footer>
+      <p>
+        <strong>Site Desenvolvido por Rômulo Queiroz</strong> &copy;
+        <a
+          href="https://github.com/Romulo-Queiroz/"
+          target="_blank"
+          rel="external"
+          ><img class="pequena" src="../imagens/icone.png" alt="github"
+        /></a>
+      </p>
+    </footer>
     <script src="../js/rashid.js"></script>
     <!-- TERMINA AQUI -->
   </body>

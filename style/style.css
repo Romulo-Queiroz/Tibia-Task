@@ -267,6 +267,7 @@ aside ul {
 }
 
 footer {
+  margin-bottom: 0;
   background-color: var(--escuro);
   color: rgb(2, 2, 2);
   text-align: center;
@@ -607,7 +608,30 @@ li {
   transition: 2s;
 }
 /* RASHID */
-
+.boxRashid {
+  width: 555px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+#rashid-img {
+  width: 250px;
+  display: flex;
+}
+.imgMapRashid {
+  width: 250px;
+}
+.txtRashid {
+  width: 200px;
+  display: flex;
+  font-weight: bold;
+}
+#rashid-day {
+  width: 200px;
+}
+.vh {
+  height: 100vh;
+}
 /* Mobile */
 
 #mobile {
