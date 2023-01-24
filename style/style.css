@@ -614,7 +614,7 @@ li {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  background-color: var(--corv1);
+  background-color: rgb(68, 126, 68);
   border-radius: 10px;
   padding: 20px;
 }
@@ -645,6 +645,15 @@ li {
 }
 li {
   margin-bottom: 15px;
+}
+.painelRashid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+#rashid-gif {
+  width: 80px;
 }
 /* Mobile */
 
