@@ -649,11 +649,23 @@ li {
 .painelRashid {
   display: flex;
   justify-content: center;
-  align-items: center;
   font-size: 40px;
+  background-image: url(../imagens/title-background-green.gif);
+
+  align-items: center;
+}
+.painelRashid > h1 {
+  color: white;
 }
 #rashid-gif {
   width: 80px;
+}
+#rashid {
+  display: inline-flex;
+  cursor: pointer;
+}
+#rashid:hover {
+  opacity: 0.5;
 }
 /* Mobile */
 
