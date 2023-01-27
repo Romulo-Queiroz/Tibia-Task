@@ -267,7 +267,6 @@ aside ul {
 }
 
 footer {
-  margin-bottom: 0;
   background-color: var(--escuro);
   color: rgb(2, 2, 2);
   text-align: center;
@@ -334,6 +333,7 @@ footer img.pequena:hover {
   text-indent: 30px;
   font-size: 1em;
   line-height: 2em;
+  list-style-type: none;
 }
 .tittleOthers {
   color: var(--cora);
