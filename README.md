@@ -6,10 +6,11 @@
 
 > ## Temos disponíveis alguns serviços como:
 >
-> - Previsão de respawn **(em proceso)** ;
+> - Previsão de respawn;
 > - Busca por characters com detalhes dos personagens;
 > - Busca por monsters com detalhes como: fraquezas ou lore;
 > - Notícias do game atualizado em tempo real;
+> - Onde se encontra o NPC Rashid
 
 ### Para o projeto contamos com ferramentas essenciais para o desenvolvimento.
 
@@ -23,9 +24,7 @@
 - **Estilização**
 - **Fetch API, Async API**
 
-> Até o momento não foi adicionado nenhuma funcionalidade com framework;
-
-## Projeto feito com amor **(em construção)**
+## Projeto feito com amor **(Em processo)**
 
 <div>
 <a href='https://site-tibiano.netlify.app/' target='_blank'>Acesse online</a>
