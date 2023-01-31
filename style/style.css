@@ -760,4 +760,21 @@ li {
   #arquive-details img {
     display: none;
   }
+  .contents {
+    align-items: center;
+    margin: 0 auto;
+    width: 320px;
+  }
+  .painelRashid {
+    width: 320px;
+  }
+  .boxRashid {
+    display: flex-box;
+    width: 320px;
+    height: 300px;
+  }
+  .txtRashid {
+    position: absolute;
+    margin-top: 222px;
+  }
 }
