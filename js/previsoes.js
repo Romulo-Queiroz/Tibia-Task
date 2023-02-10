@@ -36,10 +36,10 @@ async function getBoss(type) {
 
 
 function mundoAtual(world) {
-  const previsao = document.querySelector('#divWorld');
-  const p = document.createElement('p');
-  p.innerText = `Mundo atual: ${world}`;
-  previsao.appendChild(p);
+  let previsao = document.querySelector('#divWorld');
+  let p = document.createElement('p');
+  return (previsao.innerHTML = `Mundo: ${world}`);
+  //
 }
 
 
