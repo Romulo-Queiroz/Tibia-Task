@@ -607,6 +607,10 @@ li {
   color: #000;
   transition: 2s;
 }
+.world {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
 /* RASHID */
 .boxRashid {
   width: 622px;

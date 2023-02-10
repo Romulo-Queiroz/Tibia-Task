@@ -38,7 +38,7 @@ async function getBoss(type) {
 function mundoAtual(world) {
   let previsao = document.querySelector('#divWorld');
   let p = document.createElement('p');
-  return (previsao.innerHTML = `Mundo: ${world}`);
+  return (previsao.innerHTML = `<p>Mundo: <strong class='world'>${world}</strong></p>`);
   //
 }
 
