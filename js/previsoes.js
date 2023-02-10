@@ -22,7 +22,10 @@ button.addEventListener('click', (e) => {
     let loader = document.querySelector('.loader');
     loader.remove();
   }, 4000);
+  mundoAtual(world);
 });
+
+
 
 async function getBoss(type) {
   const { data } = await axios.get(
@@ -30,6 +33,15 @@ async function getBoss(type) {
   );
   return data[type];
 }
+
+
+function mundoAtual(world) {
+  const previsao = document.querySelector('#divWorld');
+  const p = document.createElement('p');
+  p.innerText = `Mundo atual: ${world}`;
+  previsao.appendChild(p);
+}
+
 
 function drawBossIten({ current_prob, image_url, boss, last_view }) {
   const color = current_prob === 0 ? 'red' : 'green';
@@ -86,3 +98,4 @@ async function innerBoss() {
 }
 
 padrao();
+
