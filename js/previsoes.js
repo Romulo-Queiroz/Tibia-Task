@@ -25,8 +25,6 @@ button.addEventListener('click', (e) => {
   mundoAtual(world);
 });
 
-
-
 async function getBoss(type) {
   const { data } = await axios.get(
     `https://api.simacheck.com/server/lore/${world}`
