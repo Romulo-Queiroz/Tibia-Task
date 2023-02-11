@@ -25,6 +25,7 @@ window.addEventListener('DOMContentLoaded', (name) => {
     <p>Level: ${data.characters.character.level}</p>
     <p>Archivement Points: ${data.characters.character.achievement_points}</p>
     <p>World: ${data.characters.character.world}</p>
+    <p>Created: ${data.characters.account_information.created}</p>
     <p>Residence: ${data.characters.character.residence}</p>
     <p>Account Status: ${data.characters.character.account_status}</p>
     <p class= "tittleOthers">Other characters:</p>${innerOtherCharacters(
