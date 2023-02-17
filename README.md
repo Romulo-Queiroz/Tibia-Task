@@ -27,5 +27,5 @@
 ## Projeto feito com amor **(Em processo)**
 
 <div>
-<a href='https://site-tibiano.netlify.app/' target='_blank'>Acesse online</a>
+<a href='https://tibia-task.netlify.app/' target='_blank'>Acesse online</a>
 </div>
