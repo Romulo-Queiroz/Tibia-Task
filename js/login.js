@@ -8,7 +8,7 @@ function logar(){
         console.log('click');
         if(email.value == "admin@admin.com" && senha.value == "123"){
           
-            window.location.href = "../index.html";
+            window.location.href = "../private/indexPrivate.html";
 
             console.log('logado');
 
