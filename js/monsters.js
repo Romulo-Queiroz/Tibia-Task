@@ -1,27 +1,18 @@
-let monsterDetails = document.getElementById('monster-details');
-
+var monsterDetails = document.getElementById('monster-details');
 function getmonster(name) {
-  fetch(`https://api.tibiadata.com/v3/creature/${name}`)
-    .then((response) => response.json())
-    .then((data) => {
-      monsterDetails.innerHTML = `
-    <img src="${data.creature.image_url}"/>
-    <h5>Nome: ${data.creature.name}</h5>
-    <p>Behaviour: ${data.creature.behaviour}</p>
-    <h5>Hitpoints: ${data.creature.hitpoints}</h5>
-    <p>Description: ${data.creature.description}</p>
-    <h5>Weakness: ${data.creature.weakness}</h5>
-
-    `;
+    fetch("https://api.tibiadata.com/v3/creature/".concat(name))
+        .then(function (response) { return response.json(); })
+        .then(function (data) {
+        if (monsterDetails) {
+            monsterDetails.innerHTML = "\n    <img src=\"".concat(data.creature.image_url, "\"/>\n    <h5>Nome: ").concat(data.creature.name, "</h5>\n    <p>Behaviour: ").concat(data.creature.behaviour, "</p>\n    <h5>Hitpoints: ").concat(data.creature.hitpoints, "</h5>\n    <p>Description: ").concat(data.creature.description, "</p>\n    <h5>Weakness: ").concat(data.creature.weakness, "</h5>\n\n    ");
+        }
     });
 }
-
-let form = document.getElementById('form');
-
-let charName = document.getElementById('txtChar');
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  let nomeMonster = charName.value;
-  getmonster(nomeMonster);
+var form = document.getElementById('form');
+var charName = document.getElementById('txtChar');
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var charName = document.getElementById('char-name');
+    var nomeMonster = charName.value;
+    getmonster(nomeMonster);
 });
