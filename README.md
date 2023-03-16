@@ -1,4 +1,6 @@
-# Tibia tasks
+# Tibia tasks   
+
+# (no momento reescrevendo partes do código para Typescript)
 
 ### Projeto feito com o intuito de ajudar os players do game com micros serviços.
 
