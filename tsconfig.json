@@ -1,5 +1,7 @@
 {
     "compilerOptions": {
-        "outDir": "./js/"
+      "outDir": "./js/",
+      "module": "es6"
     }
-}
+  }
+  
