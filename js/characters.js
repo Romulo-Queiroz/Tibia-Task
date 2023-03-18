@@ -1,54 +1,22 @@
-window.addEventListener('DOMContentLoaded', (name) => {
-  let playersInfo = document.getElementById('show-info');
-
-  function innerOtherCharacters(characters) {
-    let list = ``;
-    characters.forEach((character) => {
-      list += `<li>${character.name}</li>`;
+var form = document.getElementById('form');
+var nome = document.getElementById('txtChar');
+var playersInfo = document.getElementById('show-info');
+function innerOtherCharacters(characters) {
+    var list = "";
+    characters.forEach(function (character) {
+        list += "<li>".concat(character.name, "</li>");
     });
-
-    return `
-   <ul class='othersCharacetrs'>
-     ${list}.
-   </ul>
- `;
-  }
-
-  function getplayer(name) {
-    fetch(`https://api.tibiadata.com/v3/character/${name}`)
-      .then((response) => response.json())
-      .then((data) => {
-        playersInfo.innerHTML = `
-    <p>Name: ${data.characters.character.name}</p>
-    <p>Sex: ${data.characters.character.sex}</p>
-    <p>Vocation: ${data.characters.character.vocation}</p>
-    <p>Level: ${data.characters.character.level}</p>
-    <p>Archivement Points: ${data.characters.character.achievement_points}</p>
-    <p>World: ${data.characters.character.world}</p>
-    <p>Created: ${data.characters.account_information.created}</p>
-    <p>Residence: ${data.characters.character.residence}</p>
-    <p>Account Status: ${data.characters.character.account_status}</p>
-    <p class= "tittleOthers">Other characters:</p>${innerOtherCharacters(
-      data.characters.other_characters
-    )}
-    `;
-      });
-  }
-
-  let form = document.getElementById('form');
-
-  let nome = document.getElementById('txtChar');
-
-  form.addEventListener('submit', (e) => {
+    return "\n    <ul class='othersCharacetrs'>\n      ".concat(list, ".\n    </ul>\n  ");
+}
+function getPlayer(name) {
+    fetch("https://api.tibiadata.com/v3/character/".concat(name))
+        .then(function (response) { return response.json(); })
+        .then(function (data) {
+        playersInfo.innerHTML = "\n        <p>Name: ".concat(data.characters.character.name, "</p>\n        <p>Sex: ").concat(data.characters.character.sex, "</p>\n        <p>Vocation: ").concat(data.characters.character.vocation, "</p>\n        <p>Level: ").concat(data.characters.character.level, "</p>\n        <p>Archivement Points: ").concat(data.characters.character.achievement_points, "</p>\n        <p>World: ").concat(data.characters.character.world, "</p>\n        <p>Created: ").concat(data.characters.account_information.created, "</p>\n        <p>Residence: ").concat(data.characters.character.residence, "</p>\n        <p>Account Status: ").concat(data.characters.character.account_status, "</p>\n        <p class= \"tittleOthers\">Other characters:</p>").concat(innerOtherCharacters(data.characters.other_characters), "\n      ");
+    });
+}
+form.addEventListener('submit', function (e) {
     e.preventDefault();
-    let nomePlayer = nome.value;
-    getplayer(nomePlayer);
-  });
+    var nomePlayer = nome.value;
+    getPlayer(nomePlayer);
 });
-
-// deleted : false
-// main : false
-// name : "string"
-// status : "string"
-// traded : false
-// world : "string"

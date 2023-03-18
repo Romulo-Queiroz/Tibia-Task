@@ -8,7 +8,6 @@ function getmonster(name) {
         }
     });
 }
-var form = document.getElementById('form');
 var charName = document.getElementById('txtChar');
 form.addEventListener('submit', function (e) {
     e.preventDefault();

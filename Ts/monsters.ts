@@ -18,7 +18,6 @@ function getmonster(name) {
   });
 }
 
-let form = document.getElementById('form') as HTMLFormElement;
 
 let charName = document.getElementById('txtChar') as HTMLInputElement;
 
